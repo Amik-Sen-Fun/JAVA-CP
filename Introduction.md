@@ -50,9 +50,11 @@ class Test{
 
 ### Primitive v/s Non Primitive Datatype
 
-- Non-Primitive datatypes variables are always references. 
-- Memory for Non-primitive datatypes are always allocated on Heap. 
-- Members of Non-primitive variables have some default values (int = 0, bool = false)
+- Non-Primitive datatypes variables are always references. Primitive datatypes create new memory spaces. 
+- Memory for Non-primitive datatypes are always allocated on Heap. Primitive datatypes are allocated in stack.
+- Members of Non-primitive variables have some default values (int = 0, bool = false, float = 0.0). Not in primitive type and we get **compilation error**.
+
+> Heap memory is used to allocated dynamic memory. 
 
 ```java
 # Driver code
