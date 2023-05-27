@@ -26,7 +26,40 @@ To run JAVA codes we need a JDK.
 - __long__
 - __float__
 - __char__
-
-
 - For floating points number use `12.0f`
 - For Double use `12.0d`
+
+### Non-Primitive DataTypes
+
+These are usually classes that are defined by the users or predefined classes in Java.
+
+```java
+class Point{
+    int x; 
+    int y;
+}
+
+class Test{
+  public static void main(String [] args){
+      Point P = new Point();
+      P.x = 10 # accessing x on P
+      P.y = 20 # accessing y on P
+  }
+}
+```
+
+### Primitive v/s Non Primitive Datatype
+
+- Non-Primitive datatypes variables are always references. 
+- Memory for Non-primitive datatypes are always allocated on Heap. 
+- Members of Non-primitive variables have some default values (int = 0, bool = false)
+
+```java
+# Driver code
+    Point P1 = new Point();
+    P1.x = 10; P2.y = 20;
+    Point P2 = P1;
+    P2.x = 30 # this changes the value of P1 as well because it is reference 
+```
+
+
